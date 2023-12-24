@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient-dark{
+  @apply  from-gray-100 text-transparent to-gray-500 bg-clip-text bg-gradient-to-r
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,7 +17,10 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+  
 }
+
+
 
 body {
   color: rgb(var(--foreground-rgb));
